@@ -1,0 +1,37 @@
+<div class="jumbotron">
+<p id="notice"><%= notice %></p>
+
+<h1>Participantes</h1>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Sexo</th>
+      <th>Federação</th>
+      <th>Ações</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @competitors.each do |competitor| %>
+      <tr>
+        <td><%= competitor.name %></td>
+        <td><%= competitor.sex %></td>
+        <td>
+          <%= image_tag competitor.federation.flag, class: "flag" %>
+          <%= competitor.federation.name %>
+        </td>
+        <td><%= link_to 'Mostrar', competitor %></td>
+        <td><%= link_to 'Editar', edit_competitor_path(competitor) %></td>
+        <td><%= link_to 'Destruir', competitor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo participante', new_competitor_path, class: "btn btn-raised" %>
+</div>

@@ -1,0 +1,17 @@
+
+<div class="jumbotron">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @federation.name %>
+</p>
+
+<p>
+	<strong>Bandeira:</strong>
+	<%= image_tag @federation.flag.url, class: "flag" %>
+</p>
+
+<%= link_to 'Edit', edit_federation_path(@federation) %> |
+<%= link_to 'Back', federations_path %>
+</div>

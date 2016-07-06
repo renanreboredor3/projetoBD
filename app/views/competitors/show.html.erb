@@ -1,0 +1,22 @@
+<div class="jumbotron">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @competitor.name %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @competitor.sex %>
+</p>
+
+<p>
+  <strong>Federação:</strong>
+  <%= image_tag @competitor.federation.flag, class: "flag" %>
+  <%= @competitor.federation.name %>
+</p>
+
+<%= link_to 'Edit', edit_competitor_path(@competitor) %> |
+<%= link_to 'Back', competitors_path %>
+</div>
