@@ -1,6 +1,17 @@
 Rails.application.routes.draw do
   
   root 'federations#index'
+  resources :results
+  resources :rules
+  resources :competitorevents
+  resources :competitorgames
+  resources :gamefederations
+  resources :games
+  resources :phases
+  resources :healthcaresupports
+  resources :medics
+  resources :events
+  resources :modalities
   resources :activities
   resources :competitors
   resources :federations

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Gamefederations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Game</th>
+      <th>Federation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gamefederations.each do |gamefederation| %>
+      <tr>
+        <td><%= gamefederation.game %></td>
+        <td><%= gamefederation.federation %></td>
+        <td><%= link_to 'Show', gamefederation %></td>
+        <td><%= link_to 'Edit', edit_gamefederation_path(gamefederation) %></td>
+        <td><%= link_to 'Destroy', gamefederation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gamefederation', new_gamefederation_path %>

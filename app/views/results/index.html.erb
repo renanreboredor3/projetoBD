@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Results</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event</th>
+      <th>Competitor</th>
+      <th>Time</th>
+      <th>Distance</th>
+      <th>Height</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @results.each do |result| %>
+      <tr>
+        <td><%= result.event %></td>
+        <td><%= result.competitor %></td>
+        <td><%= result.time %></td>
+        <td><%= result.distance %></td>
+        <td><%= result.height %></td>
+        <td><%= link_to 'Show', result %></td>
+        <td><%= link_to 'Edit', edit_result_path(result) %></td>
+        <td><%= link_to 'Destroy', result, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Result', new_result_path %>

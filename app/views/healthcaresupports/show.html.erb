@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Medic:</strong>
+  <%= @healthcaresupport.medic %>
+</p>
+
+<p>
+  <strong>Federation:</strong>
+  <%= @healthcaresupport.federation %>
+</p>
+
+<%= link_to 'Edit', edit_healthcaresupport_path(@healthcaresupport) %> |
+<%= link_to 'Back', healthcaresupports_path %>

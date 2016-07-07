@@ -1,0 +1,2 @@
+module GamefederationsHelper
+end

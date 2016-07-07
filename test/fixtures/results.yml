@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event_id: 
+  competitor_id: 
+  time: 2016-07-07 13:35:28
+  distance: 1
+  height: 1
+
+two:
+  event_id: 
+  competitor_id: 
+  time: 2016-07-07 13:35:28
+  distance: 1
+  height: 1

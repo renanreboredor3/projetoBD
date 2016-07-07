@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Game:</strong>
+  <%= @gamefederation.game %>
+</p>
+
+<p>
+  <strong>Federation:</strong>
+  <%= @gamefederation.federation %>
+</p>
+
+<%= link_to 'Edit', edit_gamefederation_path(@gamefederation) %> |
+<%= link_to 'Back', gamefederations_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Event:</strong>
+  <%= @result.event %>
+</p>
+
+<p>
+  <strong>Competitor:</strong>
+  <%= @result.competitor %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @result.time %>
+</p>
+
+<p>
+  <strong>Distance:</strong>
+  <%= @result.distance %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @result.height %>
+</p>
+
+<%= link_to 'Edit', edit_result_path(@result) %> |
+<%= link_to 'Back', results_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Event:</strong>
+  <%= @competitorevent.event %>
+</p>
+
+<p>
+  <strong>Competitor:</strong>
+  <%= @competitorevent.competitor %>
+</p>
+
+<%= link_to 'Edit', edit_competitorevent_path(@competitorevent) %> |
+<%= link_to 'Back', competitorevents_path %>

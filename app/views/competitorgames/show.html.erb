@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Game:</strong>
+  <%= @competitorgame.game %>
+</p>
+
+<p>
+  <strong>Competitor:</strong>
+  <%= @competitorgame.competitor %>
+</p>
+
+<%= link_to 'Edit', edit_competitorgame_path(@competitorgame) %> |
+<%= link_to 'Back', competitorgames_path %>
